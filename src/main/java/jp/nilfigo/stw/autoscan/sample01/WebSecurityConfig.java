@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.permitAll()
 				.and()
 			.headers()
-				.contentSecurityPolicy("script-src 'self'");
+				.contentSecurityPolicy("default-src 'self'");
 	}
 
 	@Bean
