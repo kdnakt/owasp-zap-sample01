@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.permitAll()
 				.and()
 			.headers()
-				.contentSecurityPolicy("default-src 'self'");
+				.contentSecurityPolicy("default-src 'self'; frame-ancestors 'self'; form-action 'self';");
 	}
 
 	@Bean
